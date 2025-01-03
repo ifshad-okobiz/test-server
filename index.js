@@ -8,8 +8,12 @@ app.get("/", (req, res) => {
 });
 
 app.get("/hello", (req, res) => {
-//   const data = req.body;
+  //   const data = req.body;
   res.send(`hello route`);
+});
+
+app.post("/hello", (req, res) => {
+  res.send("post from hello");
 });
 
 app.listen(port, () => {
